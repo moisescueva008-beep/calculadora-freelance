@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Guía para dar tu primera inversión en bolsa desde Perú: ruta paso a paso, comparador de Trii, XTB y Hapi, dividendos de empresas y práctica sin riesgo.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#EFECE6">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171018">
+<meta name="color-scheme" content="light dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Primera Acción">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_PE">
+<meta property="og:title" content="Primera Acción Perú">
+<meta property="og:description" content="Aprende a dar tu primera inversión en bolsa desde Perú, con datos reales y práctica sin riesgo.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<style>:root{color-scheme:light;padding-block:env(safe-area-inset-top,0px) env(safe-area-inset-bottom,0px)}html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Primera Acción Perú</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Diseño: columna lateral fija con título grande y navegación (asimétrica), contenido abierto a la derecha separado por filetes de 1px.
+   Paleta: chicha morada + ají amarillo sobre papel y tinta con tinte ciruela. Movimiento: solo transform y opacity, curva fuerte. */
+:root{
+  --bg:#EFECE6; --surface:#F6F3EE; --ink:#231A27; --muted:#5F5465; --line:#D9D2CC;
+  --accent:#5B2A63; --accent-ink:#FFFFFF; --pos:#1D6A4C; --neg:#A63F22;
+  --hi:#E5A823; --hi-soft:#F2DFA8; --on-hi:#2B2108;
+  --tint:rgba(91,42,99,.09); --tint2:rgba(91,42,99,.17);
+  --grain:.07; --grain-img:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  --serif:"Instrument Serif","Iowan Old Style",Georgia,serif;
+  --sans:"Hanken Grotesk","Segoe UI",system-ui,sans-serif;
+  --mono:"DM Mono",ui-monospace,Menlo,Consolas,monospace;
+  --ease:cubic-bezier(0.23,1,0.32,1);
+  --d-press:140ms; --d-ui:200ms; --d-panel:280ms;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#171018; --surface:#211826; --ink:#F1EAF0; --muted:#B8AABD; --line:#3A2D40;
+    --accent:#D6A7E2; --accent-ink:#22102B; --pos:#72D6A9; --neg:#F2906F;
+    --hi:#F0B83A; --hi-soft:#3D2F12; --on-hi:#F8EDD0;
+    --tint:rgba(214,167,226,.09); --tint2:rgba(214,167,226,.18);
+    --grain:.06; --grain-img:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#171018; --surface:#211826; --ink:#F1EAF0; --muted:#B8AABD; --line:#3A2D40;
+  --accent:#D6A7E2; --accent-ink:#22102B; --pos:#72D6A9; --neg:#F2906F;
+  --hi:#F0B83A; --hi-soft:#3D2F12; --on-hi:#F8EDD0;
+  --tint:rgba(214,167,226,.09); --tint2:rgba(214,167,226,.18);
+  --grain:.06; --grain-img:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:var(--grain);background-image:var(--grain-img)}
+h1,h2,h3{margin:0;font-weight:400;text-wrap:balance}
+h1,h2{font-family:var(--serif);line-height:.98;letter-spacing:-.012em}
+h1{font-size:clamp(3.6rem,17vw,4.6rem)}
+h2{font-size:clamp(2.3rem,7vw,3.3rem)}
+h1 em,h2 em{font-style:italic;color:var(--accent)}
+h3{font-family:var(--sans);font-weight:600;font-size:1.02rem;line-height:1.3}
+p{margin:0}
+a{color:var(--accent);text-underline-offset:3px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.label{font-family:var(--mono);font-size:.72rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+.intro{color:var(--muted);max-width:58ch}
+.pos{color:var(--pos)} .neg{color:var(--neg)}
+
+/* ---------- Estructura ---------- */
+.shell{position:relative;z-index:1;display:flex;flex-direction:column;padding-inline:16px;padding-block:0 56px;max-width:1160px;margin-inline:auto}
+.side{display:contents}
+.brand{order:1;display:flex;flex-direction:column;gap:14px;padding-block:32px 22px}
+.brand .row1{display:flex;align-items:center;gap:10px}
+.brand .mark{color:var(--accent);display:inline-flex}
+.brand .lead{color:var(--muted);max-width:34ch}
+nav.tabs{order:2;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);margin-inline:-16px;padding-inline:16px;display:flex;overflow-x:auto;border-bottom:1px solid var(--line);scrollbar-width:none}
+nav.tabs::-webkit-scrollbar{display:none}
+.yields{order:3;display:flex;flex-direction:column;gap:8px;padding-block:18px 4px}
+.ylist{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin-inline:-6px;padding-inline:6px}
+.ylist::-webkit-scrollbar{display:none}
+.stamp{order:4;display:none}
+main{order:5;padding-block:36px 0;display:flex;flex-direction:column;gap:56px;min-width:0}
+
+@media (min-width:900px){
+  .shell{display:grid;grid-template-columns:290px minmax(0,1fr);column-gap:80px;padding-inline:32px;align-items:start}
+  .side{display:flex;flex-direction:column;gap:30px;position:sticky;top:0;max-height:100dvh;overflow-y:auto;padding-block:44px 32px;scrollbar-width:none}
+  .side::-webkit-scrollbar{display:none}
+  .brand,.yields{padding-block:0}
+  .brand{gap:16px}
+  h1{font-size:4.4rem}
+  nav.tabs{position:static;margin:0;padding:0;flex-direction:column;overflow:visible;border:0;background:transparent}
+  .ylist{flex-direction:column;overflow:visible;margin:0;padding:0;gap:2px}
+  .stamp{display:block;color:var(--muted);font-size:.8rem}
+  main{padding-block:52px 0}
+}
+
+/* ---------- Navegación ---------- */
+.tab{position:relative;flex:0 0 auto;font:500 .95rem var(--sans);color:var(--ink);background:transparent;border:0;padding:15px 14px;cursor:pointer;text-align:left;transition:transform var(--d-press) var(--ease)}
+.tab::after{content:"";position:absolute;left:14px;right:14px;bottom:-1px;height:2px;background:var(--accent);opacity:0;transform:translateY(4px);transition:opacity var(--d-ui) var(--ease),transform var(--d-ui) var(--ease)}
+.tab[aria-selected="true"]::after{opacity:1;transform:none}
+.tab:not([aria-selected="true"]){color:var(--muted)}
+@media (hover:hover){.tab:hover{color:var(--ink)}}
+.tab:active{transform:scale(.97)}
+@media (min-width:900px){
+  .tab{padding:9px 0 9px 18px;font-size:1.02rem}
+  .tab::after{left:0;right:auto;top:10px;bottom:10px;width:2px;height:auto;transform:translateX(-6px)}
+  .tab[aria-selected="true"]::after{transform:none}
+}
+
+/* ---------- Controles compartidos ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.seg .sel:focus-visible{outline-offset:-3px}
+.sel{position:relative;isolation:isolate;transition:transform var(--d-press) var(--ease)}
+.sel::before{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--tint);opacity:0;z-index:-1;pointer-events:none;transition:opacity var(--d-press) var(--ease)}
+.sel::after{content:"";position:absolute;inset:-1px;border-radius:inherit;border:1.5px solid var(--accent);opacity:0;pointer-events:none;transition:opacity var(--d-press) var(--ease)}
+@media (hover:hover){.sel:hover::before{opacity:.8}}
+.sel[aria-pressed="true"]::before{opacity:1}
+.sel[aria-pressed="true"]::after{opacity:1}
+.sel:active{transform:scale(.97)}
+.chip,.opt{font:500 .9rem var(--sans);color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:10px;padding:9px 14px;cursor:pointer;text-align:left}
+.opt{padding:11px 16px}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg .sel{font:500 .85rem var(--sans);color:var(--ink);background:transparent;border:0;border-radius:0;padding:9px 14px;cursor:pointer}
+.seg .sel::after{display:none}
+.seg .sel[aria-pressed="true"]::before{background:var(--tint2)}
+.seg .sel+.sel{border-left:1px solid var(--line)}
+.seg.two{display:grid;grid-template-columns:1fr 1fr;width:100%;max-width:440px}
+.seg.two .sel{text-align:center}
+.btn{position:relative;isolation:isolate;font:600 .95rem var(--sans);background:var(--accent);color:var(--accent-ink);border:1px solid var(--accent);border-radius:10px;padding:11px 20px;cursor:pointer;transition:transform var(--d-press) var(--ease)}
+.btn::after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--accent-ink);opacity:0;pointer-events:none;transition:opacity var(--d-press) var(--ease)}
+@media (hover:hover){.btn:hover::after{opacity:.14}}
+.btn:active{transform:scale(.97)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost::after{background:var(--tint)}
+@media (hover:hover){.btn.ghost:hover::after{opacity:1}}
+.btn.small{padding:7px 14px;font-size:.86rem}
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.filt{display:flex;flex-wrap:wrap;gap:8px}
+.field{display:flex;flex-direction:column;gap:8px;min-width:0}
+.field label,.field .lab{font-size:.85rem;color:var(--muted)}
+.row{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+input[type=number],select{font:500 1rem var(--mono);background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 12px;width:100%}
+input[type=range]{width:100%;accent-color:var(--accent);margin:6px 0}
+.note{display:grid;gap:4px;border-top:1px solid var(--line);padding-top:14px;font-size:.88rem;color:var(--muted);max-width:62ch}
+.note .label{color:var(--ink)}
+
+/* ---------- Animación de entrada (solo transform y opacity) ---------- */
+@keyframes enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.panel:not([hidden]){animation:enter var(--d-panel) var(--ease) both}
+.pop{animation:pop 240ms var(--ease) both}
+.reveal{animation:enter 260ms var(--ease) both}
+.blip{animation:fade 160ms var(--ease) both}
+.panel{display:flex;flex-direction:column;gap:30px;min-width:0}
+.ph{display:flex;flex-direction:column;gap:14px}
+
+/* ---------- Guía ---------- */
+.progress{height:3px;background:var(--line);overflow:hidden;border-radius:2px}
+.progress i{display:block;height:100%;width:100%;background:var(--accent);transform-origin:left;transform:scaleX(0);transition:transform 260ms var(--ease)}
+.steps{list-style:none;margin:0;padding:0}
+.step{display:grid;grid-template-columns:34px 1fr;gap:10px;padding-block:22px;border-top:1px solid var(--line)}
+.step .n{font-family:var(--mono);font-size:.78rem;color:var(--muted);padding-top:3px}
+.step .body{display:flex;flex-direction:column;gap:8px;align-items:flex-start;min-width:0}
+.chk{display:flex;gap:12px;align-items:flex-start;cursor:pointer}
+.chk input{position:absolute;opacity:0;width:22px;height:22px;margin:0;cursor:pointer}
+.chk .box{position:relative;isolation:isolate;flex:0 0 auto;width:22px;height:22px;border:1px solid var(--muted);border-radius:7px;margin-top:1px;transition:transform var(--d-press) var(--ease)}
+.chk .box::before{content:"";position:absolute;inset:-1px;border-radius:7px;background:var(--accent);opacity:0;z-index:-1;transition:opacity var(--d-press) var(--ease)}
+.chk .box svg{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:var(--accent-ink);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;opacity:0;transform:scale(.9);transition:opacity var(--d-press) var(--ease),transform var(--d-ui) var(--ease)}
+.chk input:checked+.box::before{opacity:1}
+.chk input:checked+.box svg{opacity:1;transform:none}
+.chk:active .box{transform:scale(.94)}
+.chk input:focus-visible+.box{outline:2px solid var(--accent);outline-offset:2px}
+.step p{color:var(--muted);font-size:.94rem;max-width:56ch}
+.step.done h3{text-decoration:line-through;text-decoration-color:var(--muted);color:var(--muted)}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+details[open]>:not(summary){animation:rise 220ms var(--ease) both}
+details.det summary{color:var(--accent);font-size:.88rem;font-weight:500}
+details.det ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:.9rem;display:flex;flex-direction:column;gap:5px}
+.gloss details{border-top:1px solid var(--line)}
+.gloss summary{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:15px;font-weight:500}
+.gloss summary::after{content:"+";font-family:var(--mono);color:var(--muted);transition:transform var(--d-ui) var(--ease)}
+.gloss details[open] summary::after{transform:rotate(45deg)}
+.gloss p{color:var(--muted);font-size:.93rem;padding-bottom:16px;max-width:56ch}
+.done-banner{display:flex;flex-direction:column;gap:12px;padding:22px;border-radius:14px;background:var(--hi-soft);color:var(--on-hi)}
+.done-banner .btn.ghost{color:var(--on-hi);border-color:var(--on-hi)}
+.done-banner .btn.ghost::after{background:var(--on-hi)}
+@media (hover:hover){.done-banner .btn.ghost:hover::after{opacity:.12}}
+
+/* ---------- Perfil ---------- */
+.qprog{display:flex;gap:6px;margin-bottom:6px}
+.qprog i{flex:1;height:3px;border-radius:2px;background:var(--line);position:relative;overflow:hidden}
+.qprog i::after{content:"";position:absolute;inset:0;background:var(--accent);transform-origin:left;transform:scaleX(0);transition:transform 260ms var(--ease)}
+.qprog i.on::after{transform:scaleX(1)}
+.q{display:flex;flex-direction:column;gap:12px;padding-block:22px;border-top:1px solid var(--line)}
+.q:first-of-type{border-top:0}
+.q h3{font-family:var(--serif);font-weight:400;font-size:1.45rem;line-height:1.15;max-width:30ch}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.callout{display:flex;flex-direction:column;gap:14px;padding:26px;border-radius:14px;background:var(--hi-soft);color:var(--on-hi)}
+.callout .label{color:var(--on-hi)}
+.callout .btn.ghost{color:var(--on-hi);border-color:var(--on-hi)}
+.callout .btn.ghost::after{background:var(--on-hi)}
+@media (hover:hover){.callout .btn.ghost:hover::after{opacity:.12}}
+.verdict{font-family:var(--serif);font-size:2.4rem;line-height:1}
+.pk{display:flex;flex-direction:column;gap:4px;padding-top:14px;border-top:1px solid var(--on-hi)}
+.acts{display:flex;flex-wrap:wrap;gap:8px}
+
+/* ---------- Brokers ---------- */
+.brokers{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.brokers>*{min-width:0}
+.broker{position:relative;isolation:isolate;display:flex;flex-direction:column;gap:14px;padding:18px 16px;border-radius:14px}
+.broker::before{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--tint);opacity:0;z-index:-1;transition:opacity var(--d-ui) var(--ease)}
+.broker::after{content:"";position:absolute;inset:0;border-radius:inherit;border:1.5px solid var(--accent);opacity:0;pointer-events:none;transition:opacity var(--d-ui) var(--ease)}
+.broker.match::before,.broker.match::after{opacity:1}
+.broker h3{font-family:var(--serif);font-weight:400;font-size:2.2rem;line-height:1}
+.broker header{border-bottom:1px solid var(--ink);padding-bottom:14px}
+.broker .tag{font-size:.82rem;color:var(--muted)}
+.score{font-family:var(--mono);font-size:.78rem;color:var(--pos)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;min-height:0}
+.pill{font-family:var(--mono);font-size:.68rem;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.pill.ok{color:var(--pos);border-color:var(--pos)}
+.rows{display:flex;flex-direction:column;margin:0}
+.rows div{display:grid;grid-template-columns:1fr;gap:2px;padding-block:10px;border-top:1px solid var(--line);font-size:.88rem}
+.rows dt{color:var(--muted);font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
+.rows dd{margin:0;min-width:0}
+.costs{display:flex;flex-direction:column;gap:6px}
+.costrow{display:grid;grid-template-columns:1fr auto;gap:10px;padding-block:14px;border-top:1px solid var(--line);align-items:center}
+.costrow small{display:block;color:var(--muted);font-size:.82rem}
+.costrow .big{font-family:var(--serif);font-size:2.6rem;line-height:1}
+.sub{display:flex;flex-direction:column;gap:16px}
+
+/* ---------- Empresas ---------- */
+.yl{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:baseline;flex:0 0 auto;font-family:var(--mono);font-size:.8rem;color:var(--ink);background:transparent;border:1px solid transparent;border-radius:10px;padding:7px 10px;cursor:pointer;text-align:left}
+.ylist:not(.live) .yl::before,.ylist:not(.live) .yl::after{opacity:0!important}
+.yl .v{font-family:var(--serif);font-size:1.25rem;color:var(--pos);text-align:right;line-height:1}
+@media (min-width:900px){.yl{display:flex;justify-content:space-between;width:100%}}
+.ybars{display:flex;flex-direction:column;gap:4px}
+.yb{display:grid;grid-template-columns:86px 1fr 56px;gap:12px;align-items:center;font-family:var(--mono);font-size:.82rem;background:transparent;color:var(--ink);border:1px solid transparent;border-radius:10px;padding:8px 10px;cursor:pointer;text-align:left;width:100%}
+.yb .track{height:10px;background:var(--line);border-radius:2px;overflow:hidden}
+.yb .track i{display:block;width:100%;height:100%;background:var(--accent);transform-origin:left}
+.yb .v{text-align:right;font-family:var(--serif);font-size:1.3rem;line-height:1}
+.co{display:flex;flex-direction:column;gap:30px;border-top:1px solid var(--ink);padding-top:24px}
+.co .name{font-weight:400;font-family:var(--serif);font-size:clamp(2.4rem,7vw,3.4rem);line-height:1}
+.co .tkr{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin-left:8px;vertical-align:middle}
+.stats{display:grid;gap:22px 26px;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));align-items:end}
+.stat .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.stat .v{font-family:var(--serif);font-size:2.2rem;line-height:1;font-variant-numeric:lining-nums}
+.stats.hero .stat:not(:first-child) .v{font-size:1.9rem}
+.stats.hero .stat:first-child{grid-column:1/-1}
+.stats.hero .stat:first-child .v{font-size:clamp(4rem,14vw,5.6rem);color:var(--accent)}
+@media (min-width:560px){.stats.hero .stat:first-child{grid-column:auto}}
+.calc{border-top:1px solid var(--line);padding-top:22px;display:flex;flex-direction:column;gap:18px}
+.chartbox{display:flex;flex-direction:column;gap:10px}
+.readout{font-family:var(--mono);font-size:.85rem;min-height:1.5em;font-variant-numeric:tabular-nums}
+svg.chart{width:100%;height:auto;display:block;overflow:visible}
+svg.chart text{font-family:var(--mono);font-size:10px;fill:var(--muted)}
+svg.chart text.val{fill:var(--ink)}
+svg.chart .gridl{stroke:var(--line);stroke-width:1;fill:none}
+svg.chart .zero{stroke:var(--muted);stroke-width:1}
+svg.chart .bar{fill:var(--accent)}
+svg.chart .bar.neg{fill:var(--neg)}
+svg.chart .bar.est{opacity:.5}
+svg.chart .line{fill:none;stroke:var(--accent);stroke-width:2}
+svg.chart .area{fill:var(--accent);opacity:.1}
+svg.chart .dot{fill:var(--accent)}
+svg.chart .line.s2{stroke:var(--muted);stroke-dasharray:4 3;stroke-width:1.5}
+svg.chart .dot.s2{fill:var(--muted)}
+svg.chart .line.s3{stroke:var(--pos)}
+svg.chart .dot.s3{fill:var(--pos)}
+svg.chart .col{cursor:pointer;outline:none}
+svg.chart .col .hit{fill:transparent}
+svg.chart .col .band{fill:var(--tint2);opacity:0;transition:opacity var(--d-press) var(--ease)}
+svg.chart .col.on .band{opacity:1}
+svg.chart .col .gl{stroke:var(--muted);stroke-width:1;opacity:0;transition:opacity var(--d-press) var(--ease)}
+svg.chart .col.on .gl{opacity:1}
+svg.chart .col:focus-visible .hit{stroke:var(--accent);stroke-width:1.5}
+svg.chart .col .bar{animation:rise 380ms var(--ease) both;animation-delay:calc(var(--i,0)*40ms)}
+svg.chart .col text{animation:fade 320ms var(--ease) both;animation-delay:calc(var(--i,0)*40ms + 100ms)}
+svg.chart .line,svg.chart .area{animation:fade 520ms var(--ease) both}
+svg.chart.static *{animation:none!important}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:.8rem;color:var(--muted)}
+.legend i{display:inline-block;width:16px;height:2px;vertical-align:middle;margin-right:7px;background:var(--accent)}
+.legend i.s2{background:var(--muted)} .legend i.s3{background:var(--pos)}
+.facts{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px;color:var(--muted);font-size:.93rem;max-width:62ch}
+.facts li::marker{color:var(--accent)}
+
+/* ---------- Practicar ---------- */
+.lab-panel{display:flex;flex-direction:column;gap:22px;padding:26px 22px;border-radius:18px;background:var(--surface);border:1px solid var(--line)}
+.t2{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,5.5vw,2.5rem);line-height:.98;letter-spacing:-.012em;text-wrap:balance;margin:0}
+.t2 em{font-style:italic;color:var(--accent)}
+.cols2{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.cols2>*{min-width:0}
+.gamehead{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:flex-end}
+.gamehead .alt{text-align:left}
+@media (min-width:560px){.gamehead .alt{text-align:right}}
+.gamehead .big{font-family:var(--serif);font-size:clamp(3.4rem,13vw,4.8rem);line-height:.9}
+.ctx{font-family:var(--serif);font-size:1.5rem;line-height:1.15;max-width:30ch}
+.ctx b{font-weight:400;font-style:italic}
+.log{display:flex;flex-direction:column;font-family:var(--mono);font-size:.8rem}
+.log div{display:grid;grid-template-columns:44px 1fr 62px 84px;gap:8px;padding-block:8px;border-top:1px solid var(--line)}
+.log .head{color:var(--muted);border-top:0}
+.verdict-box{display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--ink);padding-top:20px}
+.verdict-box .verdict.ok{color:var(--pos)} .verdict-box .verdict.warn{color:var(--neg)}
+
+/* ---------- Simulador ---------- */
+.sim-out{display:grid;gap:18px 26px;grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
+.split{position:relative;height:10px;border-radius:2px;overflow:hidden;background:var(--line)}
+.split i{position:absolute;inset:0;transition:transform 220ms var(--ease)}
+.split .a{background:var(--ink);transform-origin:left}
+.split .b{background:var(--pos);transform-origin:right}
+
+footer{border-top:1px solid var(--line);padding-top:24px;display:flex;flex-direction:column;gap:12px;color:var(--muted);font-size:.84rem;max-width:68ch}
+footer ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px;overflow-wrap:anywhere}
+
+@media (pointer:coarse){
+  .chip,.opt,.seg .sel,.btn,.btn.small,.yb,.yl{min-height:44px}
+  .tab{min-height:48px}
+}
+.skip{position:fixed;left:16px;top:8px;z-index:30;background:var(--accent);color:var(--accent-ink);padding:10px 16px;border-radius:10px;font-weight:600;text-decoration:none;transform:translateY(-200%);transition:transform var(--d-ui) var(--ease)}
+.skip:focus{transform:none}
+main:focus{outline:none}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<noscript>Esta página necesita JavaScript para funcionar.</noscript>
+<a class="skip" href="#main-start">Saltar al contenido</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="shell">
+<aside class="side">
+  <header class="brand">
+    <div class="row1">
+      <span class="mark" aria-hidden="true"><svg viewBox="0 0 12 12" width="18" height="18"><path d="M4 0h4v2h2v2h2v4h-2v2H8v2H4v-2H2V8H0V4h2V2h2z" fill="currentColor"/><circle cx="6" cy="6" r="1.5" fill="var(--bg)"/></svg></span>
+      <span class="label">Bolsa para principiantes · Perú</span>
+    </div>
+    <h1>Primera <em>Acción</em></h1>
+    <p class="lead">Aprende haciendo: sigue la ruta, prueba tus nervios con datos reales y compara Trii, XTB y Hapi.</p>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Secciones">
+    <button class="tab" role="tab" id="t-guia" aria-controls="p-guia" aria-selected="true" data-tab="guia">Guía</button>
+    <button class="tab" role="tab" id="t-perfil" aria-controls="p-perfil" aria-selected="false" data-tab="perfil">Mi perfil</button>
+    <button class="tab" role="tab" id="t-brokers" aria-controls="p-brokers" aria-selected="false" data-tab="brokers">Brokers</button>
+    <button class="tab" role="tab" id="t-empresas" aria-controls="p-empresas" aria-selected="false" data-tab="empresas">Empresas</button>
+    <button class="tab" role="tab" id="t-practicar" aria-controls="p-practicar" aria-selected="false" data-tab="practicar">Practicar</button>
+    <button class="tab" role="tab" id="t-sim" aria-controls="p-sim" aria-selected="false" data-tab="sim">Simulador</button>
+  </nav>
+
+  <div class="yields" id="tape">
+    <span class="label">Rentabilidad por dividendo</span>
+    <div class="ylist" id="ylist"></div>
+  </div>
+  <p class="stamp">Datos al 5 de octubre de 2026.</p>
+</aside>
+
+<main id="main-start" tabindex="-1">
+
+<!-- GUÍA -->
+<section class="panel" id="p-guia" role="tabpanel" aria-labelledby="t-guia">
+  <div class="ph">
+    <span class="label">Ruta · <span id="prog-txt">0 de 7</span></span>
+    <h2>Tu ruta, <em>paso a paso</em></h2>
+    <p class="intro">Marca cada paso al completarlo. Abre «Cómo hacerlo» para ver el detalle. Tu avance se guarda en este navegador.</p>
+  </div>
+  <div class="progress" aria-hidden="true"><i id="prog-bar"></i></div>
+  <div class="done-banner" id="banner" hidden>
+    <h3>Ruta completa</h3>
+    <p>Ya tienes lo necesario para tu primera compra. Mantén el hábito: aporte fijo y revisión poco frecuente.</p>
+    <div><button type="button" class="btn ghost small" id="reset">Reiniciar ruta</button></div>
+  </div>
+  <ol class="steps" id="steps"></ol>
+  <div class="gloss">
+    <span class="label">Palabras que vas a escuchar</span>
+    <div id="gloss" style="margin-top:10px;border-bottom:1px solid var(--line)"></div>
+  </div>
+  <p class="note"><span class="label">Ojo</span>Esta página es informativa y no es asesoría financiera. Invertir en bolsa puede hacerte perder parte o todo el dinero.</p>
+</section>
+
+<!-- PERFIL -->
+<section class="panel" id="p-perfil" role="tabpanel" aria-labelledby="t-perfil" hidden>
+  <div class="ph">
+    <span class="label">Mi perfil</span>
+    <h2>¿Estás <em>listo</em>?</h2>
+    <p class="intro">Cinco preguntas. Tu resultado se actualiza cada vez que cambias una respuesta. Nada se envía a ningún servidor.</p>
+  </div>
+  <div>
+    <div class="qprog" id="qprog" aria-hidden="true"></div>
+    <div id="quiz"></div>
+  </div>
+  <div class="callout" id="result" aria-live="polite" hidden></div>
+</section>
+
+<!-- BROKERS -->
+<section class="panel" id="p-brokers" role="tabpanel" aria-labelledby="t-brokers" hidden>
+  <div class="ph">
+    <span class="label">Comparador</span>
+    <h2>Trii, XTB <em>y Hapi</em></h2>
+    <p class="intro">Elige lo que te importa. Los brokers se reordenan según cuántos criterios cumplen. Verifica siempre las tarifas vigentes en el sitio de cada uno.</p>
+  </div>
+  <div class="filt" id="bf" role="group" aria-label="Criterios"></div>
+  <div class="brokers" id="brokers"></div>
+
+  <div class="sub">
+    <div class="ph" style="gap:8px">
+      <h3 style="font-family:var(--serif);font-weight:400;font-size:2rem;line-height:1">¿Cuánto te cuesta tu primera compra?</h3>
+      <p class="intro">Mueve el monto y mira cómo cambia el costo en cada broker.</p>
+    </div>
+    <div class="field">
+      <div class="row"><label for="buy">Monto de la compra</label><span class="mono" id="buy-o"></span></div>
+      <input type="range" id="buy" min="20" max="3000" step="10" value="200">
+    </div>
+    <div class="costs" id="costs"></div>
+    <p class="note"><span class="label">Ojo</span>Estimación simple. No incluye el costo de tu banco al enviar dinero, el tipo de cambio ni impuestos. La tarifa de Trii es la informada en 2022: confirma la vigente.</p>
+  </div>
+
+  <p class="note"><span class="label">Regulación</span>Trii opera con Kallpa SAB, un agente de bolsa local. XTB y Hapi son entidades extranjeras y no están supervisadas por la SMV de Perú. Tus reclamos se rigen por las reglas de su país de origen.</p>
+</section>
+
+<!-- EMPRESAS -->
+<section class="panel" id="p-empresas" role="tabpanel" aria-labelledby="t-empresas" hidden>
+  <div class="ph">
+    <span class="label">Datos</span>
+    <h2>Empresas y <em>dividendos</em></h2>
+    <p class="intro">Cinco nombres conocidos para ver cómo se comportan en el tiempo. Son ejemplos para aprender, no recomendaciones de compra.</p>
+  </div>
+
+  <div class="sub">
+    <span class="label">Rentabilidad por dividendo hoy · toca una fila</span>
+    <div class="ybars" id="ybars"></div>
+    <p class="intro" style="font-size:.86rem">Un porcentaje alto no es mejor por sí solo: puede avisar que el precio cayó o que el pago no se sostiene.</p>
+  </div>
+
+  <div id="company" class="co"></div>
+</section>
+
+<!-- PRACTICAR -->
+<section class="panel" id="p-practicar" role="tabpanel" aria-labelledby="t-practicar" hidden>
+  <div class="ph">
+    <span class="label">Sin riesgo</span>
+    <h2>Practica sin arriesgar <em>un sol</em></h2>
+  </div>
+  <div class="lab-panel" id="game"></div>
+  <div class="lab-panel" id="tm"></div>
+</section>
+
+<!-- SIMULADOR -->
+<section class="panel" id="p-sim" role="tabpanel" aria-labelledby="t-sim" hidden>
+  <div class="ph">
+    <span class="label">Simulador</span>
+    <h2>Invertir <em>cada mes</em></h2>
+    <p class="intro">Un ejemplo hipotético de aportes mensuales. El retorno que elijas es un supuesto, no una promesa ni una proyección.</p>
+  </div>
+  <div class="sub">
+    <div class="field"><div class="row"><label for="s-m">Aporte mensual</label><span class="mono" id="o-m"></span></div><input type="range" id="s-m" min="50" max="2000" step="50" value="300"></div>
+    <div class="field"><div class="row"><label for="s-y">Años</label><span class="mono" id="o-y"></span></div><input type="range" id="s-y" min="1" max="30" step="1" value="10"></div>
+    <div class="field"><div class="row"><label for="s-r">Retorno anual supuesto</label><span class="mono" id="o-r"></span></div><input type="range" id="s-r" min="0" max="15" step="0.5" value="7"></div>
+    <div class="filt" id="presets" role="group" aria-label="Atajos de retorno">
+      <button type="button" class="chip sel" data-r="3" aria-pressed="false">Cauto 3%</button>
+      <button type="button" class="chip sel" data-r="7" aria-pressed="false">Medio 7%</button>
+      <button type="button" class="chip sel" data-r="10" aria-pressed="false">Optimista 10%</button>
+    </div>
+  </div>
+  <div class="sub" style="border-top:1px solid var(--ink);padding-top:24px">
+    <div class="sim-out">
+      <div class="stat"><div class="k">Aportaste</div><div class="v" id="r-in"></div></div>
+      <div class="stat"><div class="k">Ganancia supuesta</div><div class="v pos" id="r-gain"></div></div>
+      <div class="stat"><div class="k">Valor al final</div><div class="v" id="r-fv"></div></div>
+    </div>
+    <div class="split" aria-hidden="true"><i class="a" id="b-in"></i><i class="b" id="b-gain"></i></div>
+    <div class="chartbox" id="sim-chart"></div>
+    <p class="note"><span class="label">Para comparar</span>El ETF VOO tuvo retornos entre −18,2% (2022) y +31,4% (2019). Los años malos existen y el cálculo de arriba los promedia. Prueba el juego de Practicar.</p>
+  </div>
+</section>
+
+<footer>
+  <p><b>Aviso.</b> Contenido educativo. No es asesoría de inversión, legal ni tributaria. Los rendimientos pasados no garantizan resultados futuros. Consulta a SUNAT o a un contador sobre cómo declarar ganancias y dividendos del exterior.</p>
+  <p><b>Sobre los datos.</b> Dividendos y rendimientos provienen de las fuentes citadas abajo, consultadas el 5 de octubre de 2026. Las fuentes a veces difieren entre sí por unos centavos. Las comisiones cambian: confirma en el broker antes de operar.</p>
+  <span class="label">Fuentes</span>
+  <ul>
+    <li><a href="https://finantres.com/xtb-en-peru/">Finantres · XTB en Perú</a></li>
+    <li><a href="https://forbes.pe/negocios/2022-03-03/trii-entra-a-peru-con-su-propuesta-de-compra-y-venta-de-acciones-desde-el-celular/">Forbes Perú · Trii entra a Perú</a></li>
+    <li><a href="https://www.rankia.cl/brokers/trii">Rankia · Trii</a> y <a href="https://www.rankia.cl/brokers/hapi">Rankia · Hapi</a></li>
+    <li><a href="https://www.rankia.cl/blog/analisis-brokers/5983954-resena-opiniones-broker-hapi-buena-opcion-para-traders-chilenos">Rankia · Reseña de Hapi</a></li>
+    <li><a href="https://app.getquin.com/es/acciones/BMG2519Y1084/credicorp/dividendos">getquin · Dividendos de Credicorp</a></li>
+    <li><a href="https://www.revistaeconomia.com/credicorp-alcanza-roe-record-de-21-1-en-el-1t26-impulsado-por-yape-y-menor-costo-de-riesgo/">Revista Economía · Credicorp 1T26</a></li>
+    <li><a href="https://www.peru-retail.com/credicorp-distribuira-mas-de-s-1000-millones-en-dividendos-extraordinarios-a-sus-accionistas/">Perú Retail · Dividendo extraordinario de Credicorp</a></li>
+    <li><a href="https://www.hl.co.uk/shares/shares-search-results/s/southern-copper-corp-usd0.01/dividends">Hargreaves Lansdown · Dividendos de Southern Copper</a></li>
+    <li><a href="https://www.sec.gov/Archives/edgar/data/0001001838/000110465926085515/scco-20260721xex99d1.htm">SEC · Southern Copper 8-K 2T26</a></li>
+    <li><a href="https://www.digrin.com/stocks/detail/KO/">Digrin · Coca-Cola</a></li>
+    <li><a href="https://chartrow.com/quote/voo/returns">ChartRow · Retornos de VOO</a> y <a href="https://www.digrin.com/stocks/detail/VOO/">Digrin · VOO</a></li>
+    <li><a href="https://dividend.watch/symbol/voo-nyse">Dividend.watch · VOO</a></li>
+    <li><a href="https://simplywall.st/stocks/pe/capital-goods/bvl-ferreyc1/ferreycorpa-shares/dividend">Simply Wall St · Ferreycorp</a> y <a href="https://proactivo.com.pe/ferreycorp-anuncia-pago-de-s-100-millones-en-dividendos-a-cuenta-correspondiente-al-ejercicio-2025/">ProActivo · Dividendo de Ferreycorp</a></li>
+  </ul>
+</footer>
+</main>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  document.documentElement.lang = "es-PE";
+  var $ = function(s,r){return (r||document).querySelector(s)};
+  var $$ = function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  function NUM(n,d){
+    var p = Math.abs(n).toFixed(d).split(".");
+    p[0] = p[0].replace(/\B(?=(\d{3})+(?!\d))/g,".");
+    return (n<0&&Math.abs(n)>=Math.pow(10,-d)/2?"−":"")+p.join(",");
+  }
+  function SGN(n,d){return (n>0?"+":"")+NUM(n,d)}
+  var fmtS = function(n){return "S/ "+NUM(n,0)};
+  function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;")}
+  function store(k,v){try{if(v===undefined){return localStorage.getItem(k)}localStorage.setItem(k,v)}catch(e){return null}}
+  var REDUCE = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function replay(el,cls){el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls)}
+  /* cuenta animada de un número, curva de salida fuerte */
+  function tween(el,from,to,fmt){
+    if(!el) return;
+    if(REDUCE||from===to||from==null){el.textContent=fmt(to);return}
+    var t0=performance.now(),dur=420;
+    (function f(t){
+      var p=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-p,4);
+      el.textContent=fmt(from+(to-from)*e);
+      if(p<1) requestAnimationFrame(f);
+    })(t0);
+  }
+
+  /* ---------- Pestañas ---------- */
+  function showTab(id){
+    $$(".tab").forEach(function(t){var on=t.dataset.tab===id; t.setAttribute("aria-selected",String(on)); t.tabIndex=on?0:-1});
+    $$("section.panel").forEach(function(p){p.hidden = p.id!=="p-"+id});
+    $("#ylist").classList.toggle("live",id==="empresas");
+    var t = $("#t-"+id); if(t && t.scrollIntoView) t.scrollIntoView({block:"nearest",inline:"center"});
+    window.scrollTo(0,0);
+  }
+  $$(".tab").forEach(function(t,i){t.tabIndex=i?-1:0; t.addEventListener("click",function(){showTab(t.dataset.tab)})});
+  $(".tabs").addEventListener("keydown",function(e){
+    var tabs=$$(".tab"), i=tabs.indexOf(document.activeElement); if(i<0) return;
+    var d={ArrowRight:1,ArrowDown:1,ArrowLeft:-1,ArrowUp:-1}[e.key], ni=-1;
+    if(e.key==="Home") ni=0; else if(e.key==="End") ni=tabs.length-1; else if(d) ni=(i+d+tabs.length)%tabs.length;
+    if(ni<0) return; e.preventDefault(); tabs[ni].focus(); showTab(tabs[ni].dataset.tab);
+  });
+  $(".skip").addEventListener("click",function(e){e.preventDefault(); var m=$("#main-start"); m.focus(); m.scrollIntoView({block:"start"})});
+  document.addEventListener("click",function(e){
+    var g = e.target.closest("[data-goto]");
+    if(g){showTab(g.dataset.goto)}
+  });
+
+  /* ---------- Gráficos interactivos ---------- */
+  function wireChart(box){
+    var cols = $$(".col",box), out = $(".readout",box);
+    if(!cols.length) return;
+    function on(c,focus){
+      cols.forEach(function(x){x.classList.remove("on"); x.tabIndex=-1});
+      c.classList.add("on"); c.tabIndex=0;
+      out.textContent = c.getAttribute("data-r");
+      replay(out,"blip");
+      if(focus) c.focus();
+    }
+    cols.forEach(function(c,i){
+      ["pointerenter","click"].forEach(function(ev){c.addEventListener(ev,function(){on(c)})});
+      c.addEventListener("focus",function(){ if(!c.classList.contains("on")) on(c) });
+      c.addEventListener("keydown",function(e){
+        var d = e.key==="ArrowRight"?1:e.key==="ArrowLeft"?-1:0;
+        if(e.key==="Home"){e.preventDefault(); on(cols[0],true)}
+        else if(e.key==="End"){e.preventDefault(); on(cols[cols.length-1],true)}
+        else if(d){e.preventDefault(); on(cols[Math.max(0,Math.min(cols.length-1,i+d))],true)}
+      });
+    });
+    on(cols[cols.length-1]);
+  }
+  function barChart(pts,fmt,dec){
+    var W=320,H=170,pl=8,pr=8,pt=22,pb=pts.some(function(p){return p[1]<0})?36:22;
+    var vals = pts.map(function(p){return p[1]});
+    var max = Math.max.apply(null,vals.concat([0])), min = Math.min.apply(null,vals.concat([0]));
+    var span = (max-min)||1;
+    var y = function(v){return pt+(max-v)/span*(H-pt-pb)};
+    var bw = (W-pl-pr)/pts.length, g = bw*0.24;
+    var s = '<svg class="chart" viewBox="0 0 '+W+' '+H+'" role="group" aria-label="Gráfico de barras">';
+    s += '<line class="zero" x1="'+pl+'" x2="'+(W-pr)+'" y1="'+y(0)+'" y2="'+y(0)+'"/>';
+    pts.forEach(function(p,i){
+      var x = pl+i*bw+g/2, w = bw-g, v = p[1], y0 = y(0), y1 = y(v);
+      var top = Math.min(y0,y1), h = Math.max(1,Math.abs(y1-y0));
+      var cls = "bar"+(v<0?" neg":"")+(p[2]?" est":"");
+      var ty = v>=0 ? top-4 : top+h+10;
+      var txt = fmt(p);
+      s += '<g class="col" tabindex="0" role="img" aria-label="'+esc(txt)+'" data-r="'+esc(txt)+'" style="--i:'+i+'">';
+      var bwid = Math.min(bw,56); s += '<rect class="band" x="'+(pl+i*bw+(bw-bwid)/2)+'" y="2" width="'+bwid+'" height="'+(H-4)+'" rx="4"/>';
+      s += '<rect class="'+cls+'" x="'+x+'" y="'+top+'" width="'+w+'" height="'+h+'" rx="1.5"/>';
+      s += '<text class="val" text-anchor="middle" x="'+(x+w/2)+'" y="'+ty+'">'+NUM(v,dec)+'</text>';
+      s += '<text text-anchor="middle" x="'+(x+w/2)+'" y="'+(H-6)+'">'+esc(p[0])+'</text>';
+      s += '<rect class="hit" x="'+(pl+i*bw)+'" y="0" width="'+bw+'" height="'+H+'"/></g>';
+    });
+    return s+'</svg>';
+  }
+  /* series: [{cls:"s1",pts:[[label,value],...]}], rowFmt(i) = texto de la lectura */
+  function lineChart(series,rowFmt,tickDec,isStatic){
+    var W=320,H=170,pl=38,pr=14,pt=14,pb=24;
+    var base = series[0].pts, n = base.length;
+    var all = []; series.forEach(function(se){se.pts.forEach(function(p){all.push(p[1])})});
+    var lo = Math.min.apply(null,all), hi = Math.max.apply(null,all);
+    var pad = (hi-lo)*0.1||1; lo-=pad; hi+=pad;
+    var x = function(i){return pl+i*(W-pl-pr)/(n-1)};
+    var y = function(v){return pt+(hi-v)/(hi-lo)*(H-pt-pb)};
+    var s = '<svg class="chart'+(isStatic?' static':'')+'" viewBox="0 0 '+W+' '+H+'" role="group" aria-label="Gráfico de líneas">';
+    for(var t=0;t<3;t++){
+      var gv = lo+(hi-lo)*t/2, gy = y(gv);
+      s += '<line class="gridl" x1="'+pl+'" x2="'+(W-pr)+'" y1="'+gy+'" y2="'+gy+'"/><text text-anchor="end" x="'+(pl-5)+'" y="'+(gy+3)+'">'+NUM(gv,tickDec||0)+'</text>';
+    }
+    series.forEach(function(se,si){
+      var d = se.pts.map(function(p,i){return (i?"L":"M")+x(i).toFixed(1)+" "+y(p[1]).toFixed(1)}).join(" ");
+      if(si===0 && series.length===1) s += '<path class="area" d="'+d+' L'+x(n-1)+' '+(H-pb)+' L'+x(0)+' '+(H-pb)+' Z"/>';
+      s += '<path class="line '+se.cls+'" d="'+d+'"/>';
+    });
+    var step = n>7?2:1;
+    for(var i=0;i<n;i++){
+      var txt = rowFmt(i), half = (W-pl-pr)/(n-1)/2;
+      s += '<g class="col" tabindex="0" role="img" aria-label="'+esc(txt)+'" data-r="'+esc(txt)+'" style="--i:'+i+'">';
+      var bx = Math.max(0,Math.min(W-30,x(i)-15)); s += '<rect class="band" x="'+bx+'" y="'+(pt-8)+'" width="30" height="'+(H-pb-pt+12)+'" rx="4"/>';
+      s += '<line class="gl" x1="'+x(i)+'" x2="'+x(i)+'" y1="'+pt+'" y2="'+(H-pb)+'"/>';
+      series.forEach(function(se){ s += '<circle class="dot '+se.cls+'" cx="'+x(i)+'" cy="'+y(se.pts[i][1])+'" r="'+(i===n-1?4:2.6)+'"/>'; });
+      if(i%step===0||i===n-1) s += '<text text-anchor="middle" x="'+x(i)+'" y="'+(H-6)+'">'+esc(base[i][0])+'</text>';
+      var hx = Math.max(0,x(i)-half), hw = Math.min(W,x(i)+half)-hx; s += '<rect class="hit" x="'+hx+'" y="0" width="'+hw+'" height="'+H+'"/></g>';
+    }
+    return s+'</svg>';
+  }
+  function chartBox(title,svg,legend){
+    return '<div class="chartbox"><span class="label">'+esc(title)+'</span>'+(legend||"")+svg+'<p class="readout"></p></div>';
+  }
+
+  /* ---------- Guía ---------- */
+  var STEPS = [
+    {t:"Arma tu colchón",d:"Ten ahorrado entre 3 y 6 meses de gastos en una cuenta aparte. La bolsa sube y baja, y no debes vender en el peor momento por una emergencia.",
+     more:["Suma tus gastos fijos de un mes y multiplícalos por 3 o por 6.","Paga primero las deudas con tasas altas, como tarjetas de crédito.","Guarda el colchón en una cuenta de ahorro, no en acciones."]},
+    {t:"Define tu meta y tu plazo",d:"¿Para qué es este dinero y cuándo lo usarás? Si lo necesitas en menos de un año, la bolsa no es el lugar.",
+     more:["Meta corta (menos de 1 año): ahorro o depósito a plazo.","Meta de 5 años o más: la bolsa empieza a tener sentido.","El test de la pestaña Mi perfil te da una orientación."],go:["perfil","Hacer el test"]},
+    {t:"Elige tu broker",d:"Compara regulación, comisiones, mercados y monto mínimo. Si empiezas con poco, evita las comisiones fijas altas.",
+     more:["Decide si quieres acciones peruanas (BVL) o de EE. UU.","Revisa quién regula al broker y qué protección ofrece.","Calcula cuánto te cuesta tu primera compra."],go:["brokers","Comparar brokers"]},
+    {t:"Abre y verifica tu cuenta",d:"Tendrás que subir tu DNI o pasaporte y a veces una selfie. Revisa que estés en el sitio o la app oficial del broker.",
+     more:["Descarga la app solo desde la tienda oficial.","Activa la verificación en dos pasos.","Nunca compartas tu clave ni códigos que te lleguen por mensaje."]},
+    {t:"Fondea con un monto pequeño",d:"Envía solo lo que estés dispuesto a ver subir y bajar. El costo de transferir o cambiar a dólares suele pesar más que la comisión de compra.",
+     more:["Compara el costo del depósito local con el de transferencia internacional.","Haz un primer depósito pequeño para probar el proceso.","Anota el tipo de cambio que te aplicaron."]},
+    {t:"Haz tu primera compra",d:"Un ETF amplio, como uno que replique al S&P 500, reparte tu dinero en cientos de empresas. Comprar una sola empresa concentra el riesgo.",
+     more:["Usa una orden de mercado solo si el activo se negocia con mucho volumen.","Empieza con poco y observa cómo te sientes cuando baja.","Practica antes con el juego de la pestaña Practicar."],go:["practicar","Ir a practicar"]},
+    {t:"Automatiza y revisa poco",d:"Aporta una cantidad fija cada mes y revisa tu cartera una o dos veces al año. Mirarla todos los días da ganas de vender por miedo.",
+     more:["Programa una fecha fija de aporte, por ejemplo el día de tu pago.","Reinvierte los dividendos si no los necesitas.","Prueba cuánto crece un aporte mensual en el Simulador."],go:["sim","Abrir simulador"]}
+  ];
+  var doneSet = {};
+  try{doneSet = JSON.parse(store("pa-steps")||"{}")||{}}catch(e){doneSet={}}
+  var ol = $("#steps");
+  STEPS.forEach(function(s,i){
+    var li = document.createElement("li");
+    li.className = "step"+(doneSet[i]?" done":"");
+    li.innerHTML = '<span class="n">'+String(i+1).padStart(2,"0")+'</span><div class="body"><label class="chk"><input type="checkbox" id="st-'+i+'"'+(doneSet[i]?" checked":"")+'><span class="box" aria-hidden="true"><svg viewBox="0 0 22 22"><path d="M6 11.5l3.4 3.4L16 8"/></svg></span><h3></h3></label><p></p><details class="det"><summary>Cómo hacerlo</summary><ul></ul></details></div>';
+    $("h3",li).textContent = s.t; $("p",li).textContent = s.d;
+    s.more.forEach(function(m){var l=document.createElement("li"); l.textContent=m; $("ul",li).appendChild(l)});
+    if(s.go){var b=document.createElement("button"); b.type="button"; b.className="btn ghost small"; b.dataset.goto=s.go[0]; b.textContent=s.go[1]+" →"; $(".body",li).appendChild(b)}
+    $("input",li).addEventListener("change",function(e){
+      doneSet[i] = e.target.checked; li.classList.toggle("done",e.target.checked);
+      store("pa-steps",JSON.stringify(doneSet)); progress();
+    });
+    ol.appendChild(li);
+  });
+  function progress(){
+    var n = Object.keys(doneSet).filter(function(k){return doneSet[k]}).length;
+    $("#prog-txt").textContent = n+" de "+STEPS.length;
+    $("#prog-bar").style.transform = "scaleX("+(n/STEPS.length)+")";
+    var bn = $("#banner"), was = bn.hidden;
+    bn.hidden = n<STEPS.length;
+    if(was && !bn.hidden) replay(bn,"pop");
+  }
+  $("#reset").addEventListener("click",function(){
+    doneSet={}; store("pa-steps","{}");
+    $$("#steps input").forEach(function(c){c.checked=false}); $$(".step").forEach(function(l){l.classList.remove("done")});
+    progress();
+  });
+  progress();
+
+  var GLOSS = [
+    ["Acción","Una parte pequeña de una empresa. Si la empresa gana, puedes ganar con el precio y con los dividendos."],
+    ["ETF","Un fondo que se compra y vende en bolsa como una acción y que contiene muchas empresas a la vez."],
+    ["Dividendo","Parte de las utilidades que una empresa reparte a sus accionistas. No es obligatorio y puede cambiar."],
+    ["Rentabilidad por dividendo","Dividendo anual dividido entre el precio de la acción. Con 4% y S/ 1.000 invertidos, cobrarías unos S/ 40 al año."],
+    ["Fecha ex-dividendo","Si compras antes de esa fecha, cobras el dividendo. Si compras ese día o después, no."],
+    ["Acción fraccionada","Te deja comprar un pedazo de una acción cuando no te alcanza para una entera."],
+    ["SAB","Sociedad Agente de Bolsa: la entidad local autorizada en Perú para operar en la bolsa por ti."],
+    ["CFD","Contrato por diferencia: apuesta al precio sin ser dueño de la acción. Suele llevar apalancamiento y es riesgoso para principiantes."]
+  ];
+  $("#gloss").innerHTML = GLOSS.map(function(g){return '<details><summary>'+esc(g[0])+'</summary><p>'+esc(g[1])+'</p></details>'}).join("");
+
+  /* ---------- Brokers ---------- */
+  var CRIT = [["local","Agente de bolsa local"],["nocom","Sin comisión de compra"],["small","Compras menores a S/ 100"],["bvl","Acciones de la BVL"],["sipc","Protección SIPC"]];
+  var BROKERS = [
+    {name:"Trii",tag:"Broker colombiano con agente de bolsa local",ok:{local:1,bvl:1},
+     rows:[["Regulación","Opera en Perú con Kallpa SAB, agente de bolsa local."],
+           ["Comisión","S/ 10 por operación (tarifa informada al lanzar en Perú, 2022). Confirma la vigente."],
+           ["Mínimo","Sin mínimo publicado en Chile. Confirma en Perú."],
+           ["Mercados","Bolsa de Valores de Lima y acciones internacionales, más ETF."],
+           ["Ojo con","La comisión fija encarece las compras pequeñas."]]},
+    {name:"XTB",tag:"Broker internacional con atención en español",ok:{nocom:1,small:1},
+     rows:[["Regulación","XTB International Limited, supervisada por la FSC de Belice. Regulación extranjera."],
+           ["Comisión","0% en acciones y ETF reales hasta €100.000 de volumen mensual, luego 0,2% (mínimo €10)."],
+           ["Mínimo","Sin comisión de apertura. Derechos fraccionarios disponibles."],
+           ["Mercados","Más de 6.900 acciones y 2.200 ETF."],
+           ["Ojo con","Conversión de divisa cerca de 0,5%. Inactividad hasta €10 al mes. Evita los CFD si recién empiezas."]]},
+    {name:"Hapi",tag:"Broker estadounidense enfocado en Latinoamérica",ok:{nocom:1,small:1,sipc:1},
+     rows:[["Regulación","Hapi Securities LLC, registrada ante la SEC y miembro de FINRA. Valores protegidos por SIPC hasta US$ 500.000."],
+           ["Comisión","0% al comprar y vender acciones y ETF de EE. UU."],
+           ["Mínimo","Desde US$ 1. Acciones fraccionadas."],
+           ["Mercados","Bolsa de EE. UU., ETF y criptomonedas. Depósitos locales en Perú."],
+           ["Ojo con","Las criptomonedas sí tienen costo integrado. Revisa el costo de tu depósito."]]}
+  ];
+  var sel = {};
+  var bf = $("#bf");
+  CRIT.forEach(function(c){
+    var b=document.createElement("button"); b.type="button"; b.className="chip sel"; b.textContent=c[1]; b.setAttribute("aria-pressed","false");
+    b.addEventListener("click",function(){sel[c[0]]=!sel[c[0]]; b.setAttribute("aria-pressed",String(!!sel[c[0]])); renderBrokers()});
+    bf.appendChild(b);
+  });
+  function renderBrokers(){
+    var host = $("#brokers"), old = {};
+    $$(".broker",host).forEach(function(el){old[el.dataset.n]=el.getBoundingClientRect()});
+    var keys = CRIT.filter(function(c){return sel[c[0]]});
+    var list = BROKERS.map(function(b){return {b:b,m:keys.filter(function(c){return b.ok[c[0]]})}});
+    list.sort(function(a,z){return z.m.length-a.m.length});
+    host.innerHTML = "";
+    list.forEach(function(it){
+      var b = it.b, c = document.createElement("article");
+      c.className = "broker"+(keys.length&&it.m.length===keys.length?" match":"");
+      c.dataset.n = b.name;
+      var h = '<header><div class="row"><h3></h3><span class="score"></span></div><span class="tag"></span></header><div class="pills"></div><dl class="rows">';
+      b.rows.forEach(function(){h+='<div><dt></dt><dd></dd></div>'});
+      c.innerHTML = h+'</dl>';
+      $("h3",c).textContent = b.name; $(".tag",c).textContent = b.tag;
+      $(".score",c).textContent = keys.length ? it.m.length+" de "+keys.length : "";
+      $(".pills",c).innerHTML = keys.map(function(k){var ok=b.ok[k[0]]; return '<span class="pill'+(ok?" ok":"")+'">'+(ok?"✓ ":"✗ ")+esc(k[1])+'</span>'}).join("");
+      $$(".rows div",c).forEach(function(d,i){$("dt",d).textContent=b.rows[i][0]; $("dd",d).textContent=b.rows[i][1]});
+      host.appendChild(c);
+    });
+    /* FLIP: las tarjetas se deslizan a su nuevo lugar */
+    if(!REDUCE && c0(old)){
+      $$(".broker",host).forEach(function(el){
+        var o = old[el.dataset.n]; if(!o) return;
+        var n = el.getBoundingClientRect(), dx = o.left-n.left, dy = o.top-n.top;
+        if((dx||dy) && el.animate) el.animate([{transform:"translate("+dx+"px,"+dy+"px)"},{transform:"none"}],{duration:340,easing:"cubic-bezier(0.23,1,0.32,1)"});
+      });
+    }
+  }
+  function c0(o){for(var k in o){return true}return false}
+  renderBrokers();
+
+  function costs(){
+    var amt = +$("#buy").value;
+    $("#buy-o").textContent = fmtS(amt);
+    var tr = Math.min(100, 10/amt*100);
+    var rows = [
+      ["Trii", tr, "S/ 10 fijos"],
+      ["XTB", 0.5, "0% de comisión y cerca de 0,5% por conversión: "+fmtS(amt*0.005)],
+      ["Hapi", 0, "0% de comisión. Revisa el costo de tu depósito."]
+    ];
+    $("#costs").innerHTML = rows.map(function(r){
+      return '<div class="costrow"><div><b>'+r[0]+'</b><small>'+r[2]+'</small></div><div class="big" style="color:'+(r[1]>=3?"var(--neg)":"var(--pos)")+'">'+NUM(r[1],r[1]<10?1:0)+'%</div></div>';
+    }).join("");
+  }
+  $("#buy").addEventListener("input",costs); costs();
+
+  /* ---------- Perfil ---------- */
+  var Q = [
+    {k:"hor",t:"¿Cuándo necesitarás este dinero?",o:[["lt1","En menos de 1 año"],["1-3","En 1 a 3 años"],["3-5","En 3 a 5 años"],["5+","En 5 años o más"]]},
+    {k:"emg",t:"¿Tienes un colchón de 3 a 6 meses de gastos, aparte de lo que vas a invertir?",o:[["si","Sí"],["no","Todavía no"]]},
+    {k:"tol",t:"Tu inversión cae 20% en un año. ¿Qué haces?",o:[["sell","Vendo para no perder más"],["wait","Espero y no toco nada"],["buy","Compro más a precio bajo"]]},
+    {k:"amt",t:"¿Con cuánto empezarías?",o:[["lt100","Menos de S/ 100"],["100-1000","S/ 100 a S/ 1.000"],["gt1000","Más de S/ 1.000"]]},
+    {k:"pref",t:"¿Qué te atrae más?",o:[["peru","Empresas peruanas"],["usa","Empresas de EE. UU."],["nose","No lo sé aún"]]}
+  ];
+  var ans = {};
+  var qz = $("#quiz");
+  $("#qprog").innerHTML = Q.map(function(){return "<i></i>"}).join("");
+  Q.forEach(function(q){
+    var d = document.createElement("div"); d.className = "q";
+    d.innerHTML = '<h3></h3><div class="opts"></div>';
+    $("h3",d).textContent = q.t;
+    q.o.forEach(function(o){
+      var b = document.createElement("button");
+      b.type="button"; b.className="opt sel"; b.textContent=o[1]; b.setAttribute("aria-pressed","false");
+      b.addEventListener("click",function(){
+        ans[q.k]=o[0];
+        $$(".opt",d).forEach(function(x){x.setAttribute("aria-pressed","false")});
+        b.setAttribute("aria-pressed","true");
+        $$("#qprog i").forEach(function(i,ix){i.classList.toggle("on",!!ans[Q[ix].k])});
+        evalQuiz();
+      });
+      $(".opts",d).appendChild(b);
+    });
+    qz.appendChild(d);
+  });
+  function evalQuiz(){
+    if(Object.keys(ans).length<Q.length) return;
+    var v="", msg="", pick=[], go=null;
+    if(ans.hor==="lt1"){
+      v="Aún no es para la bolsa";
+      msg="Con menos de un año, el precio puede estar bajo justo cuando necesites el dinero. Una cuenta de ahorro o un depósito a plazo calza mejor con ese plazo.";
+    } else if(ans.emg==="no"){
+      v="Prepárate primero";
+      msg="Arma antes un colchón de 3 a 6 meses de gastos. Así no tendrás que vender tus inversiones a mal precio si surge una emergencia.";
+    } else if(ans.tol==="sell"){
+      v="Empieza muy pequeño";
+      msg="Una caída de 20% es normal en la bolsa. Si te daría ganas de vender, empieza con un monto que no te quite el sueño. Prueba tu reacción en el juego de Practicar, con datos reales de 2019 a 2025.";
+      go=["practicar","Probar mis nervios"];
+    } else {
+      v="Listo para empezar";
+      msg="Tienes plazo, colchón y la calma para ver caídas. Empieza con montos pequeños y aporta de forma regular.";
+    }
+    if(ans.hor!=="lt1" && ans.emg!=="no"){
+      var broker, why, first;
+      if(ans.amt==="lt100"){
+        broker="Hapi o XTB"; why="Con menos de S/ 100, una comisión fija de S/ 10 se come 10% o más de tu compra. Hapi permite acciones fraccionadas desde US$ 1 y no cobra comisión de compra.";
+      } else if(ans.pref==="peru"){
+        broker="Trii"; why="Te da acceso directo a la Bolsa de Valores de Lima por medio de un agente de bolsa local. Con la comisión fija de S/ 10, junta compras más grandes en lugar de muchas chicas.";
+      } else {
+        broker="Hapi o XTB"; why="Ambos dan acceso a acciones y ETF de EE. UU. con 0% de comisión de compra. Compara el costo de depositar y de cambiar divisas en cada uno.";
+      }
+      first = ans.pref==="peru"
+        ? "Una o dos empresas de la bolsa limeña, en cantidades pequeñas. Mira la pestaña Empresas para ver su dividendo. Una sola empresa concentra riesgo."
+        : "Un ETF amplio que replique al S&P 500, como VOO, reparte tu dinero en unas 500 empresas con una sola compra.";
+      pick = [["Broker para ti",broker+". "+why],["Tu primera compra",first],["Regla básica","Invierte solo dinero que puedas dejar quieto 5 años o más, y aporta una cantidad fija cada mes."]];
+    }
+    var r = $("#result"); r.hidden=false;
+    r.innerHTML = '<span class="label">Tu resultado</span><div class="verdict"></div><p class="msg"></p>'+pick.map(function(){return '<div class="pk"><span class="label"></span><p></p></div>'}).join("")+'<div class="acts"></div>';
+    $(".verdict",r).textContent=v; $(".msg",r).textContent=msg;
+    $$(".pk",r).forEach(function(d,i){$(".label",d).textContent=pick[i][0]; $("p",d).textContent=pick[i][1]});
+    var acts = $(".acts",r);
+    function act(to,txt,primary){var b=document.createElement("button"); b.type="button"; b.className="btn small"+(primary?"":" ghost"); b.dataset.goto=to; b.textContent=txt; acts.appendChild(b)}
+    if(go) act(go[0],go[1],true);
+    if(pick.length){act("brokers","Ver brokers",!go); act("empresas","Ver empresas",false)}
+    replay(r,"pop");
+    r.scrollIntoView({behavior:REDUCE?"auto":"smooth",block:"nearest"});
+  }
+
+  /* ---------- Empresas ---------- */
+  var fUSD = function(p){return p[0]+": US$ "+NUM(p[1],2)+(p[2]?" (ritmo actual o parcial)":"")};
+  var fPCT = function(p){return p[0]+": "+SGN(p[1],1)+"%"+(p[2]?" (hasta jul.)":"")};
+  var fPX = function(p){return p[0]+": US$ "+NUM(p[1],2)};
+  var CO = {
+    BAP:{name:"Credicorp",sub:"Grupo financiero peruano (BCP, Yape, Pacífico). Cotiza en la BVL y en Nueva York.",yld:3.7,freq:1,
+      views:[{label:"Dividendos",type:"bar",dec:2,title:"Dividendo por acción, US$ por año",fmt:fUSD,
+        pts:[["2022",3.99],["2023",6.78],["2024",12.20],["2025",11.01],["2026",14.64]]}],
+      stats:[["Rentabilidad por dividendo","≈3,7%"],["Último dividendo","S/ 50 por acción"],["ROE 1T26","21,1%"]],
+      facts:["Paga una vez al año. El último fue declarado en 2026 como dividendo ordinario récord de S/ 50 por acción, pagado el 12 de junio.",
+             "El monto de 2024 incluye un dividendo extraordinario de S/ 11 por acción y se pagó en dos partes. Por eso el salto no es un ritmo normal.",
+             "Utilidad neta del primer trimestre de 2026: S/ 2.063 millones. Yape ya aporta cerca de 17% de los ingresos por comisiones del grupo.",
+             "El pago depende de las utilidades y puede variar mucho de un año a otro."]},
+    SCCO:{name:"Southern Copper",sub:"Minera de cobre con operaciones en Perú y México. Cotiza en Nueva York y en la BVL.",yld:2.1,freq:4,
+      views:[{label:"Dividendos",type:"bar",dec:2,title:"Dividendos por acción, US$ por año",fmt:fUSD,
+        pts:[["2021",2.97],["2022",3.24],["2023",3.71],["2024",1.96],["2025",2.98],["2026*",3.08,true]]}],
+      stats:[["Rentabilidad por dividendo","≈2,1%"],["Dividendo trimestral","US$ 1,10"],["Precio de ref.","≈US$ 177"]],
+      facts:["Paga cada trimestre. En julio de 2026 aprobó US$ 1,10 por acción, pagados el 27 de agosto.",
+             "*2026 suma los pagos de febrero, mayo y agosto. Falta el de noviembre, así que el año aún no cierra.",
+             "El dividendo sube y baja con el precio del cobre: en 2024 cayó casi a la mitad. Las utilidades del segundo trimestre de 2026 fueron US$ 1.670 millones, 72% más que un año antes.",
+             "Algunas fuentes difieren en el total de 2025 (entre US$ 2,98 y US$ 3,96). Aquí se usa la serie de Hargreaves Lansdown."]},
+    KO:{name:"Coca-Cola",sub:"Bebidas de consumo masivo. Cotiza en la bolsa de Nueva York.",yld:2.5,freq:4,
+      views:[
+        {label:"Dividendos",type:"bar",dec:2,title:"Dividendos por acción, US$ por año",fmt:fUSD,
+         pts:[["2020",1.64],["2021",1.68],["2022",1.76],["2023",1.84],["2024",1.94],["2025",2.04],["2026*",2.12,true]]},
+        {label:"Precio",type:"line",title:"Precio en cada fecha de dividendo, US$",fmt:fPX,
+         pts:[["mar 23",60.30],["sep 23",60.88],["mar 24",59.35],["sep 24",69.18],["mar 25",71.35],["sep 25",69.92],["mar 26",80.79],["jun 26",80.82]]}],
+      stats:[["Rentabilidad por dividendo","≈2,5%"],["Pago trimestral","US$ 0,53"],["Crecimiento anual","≈5%"]],
+      facts:["Paga cuatro veces al año y ha subido el monto cada año del gráfico.",
+             "*2026 usa el ritmo actual de US$ 0,53 por trimestre, no un total ya pagado.",
+             "Su dividendo crece de forma lenta y estable. A cambio, el precio no se mueve como el de una minera.",
+             "Prueba qué habría pasado con una compra en 2023 en la Máquina del tiempo de Practicar."]},
+    VOO:{name:"Vanguard S&P 500 ETF",sub:"Fondo que replica a las 500 mayores empresas de EE. UU. Comisión anual de 0,03%.",yld:1.1,freq:4,
+      views:[
+        {label:"Retorno anual",type:"bar",dec:1,title:"Retorno total por año, %",fmt:fPCT,
+         pts:[["2019",31.4],["2020",18.3],["2021",28.8],["2022",-18.2],["2023",26.3],["2024",25.0],["2025",17.8],["2026",9.5,true]]},
+        {label:"Dividendos",type:"bar",dec:2,title:"Dividendos por acción, US$ por año",fmt:fUSD,
+         pts:[["2024",6.70],["2025",7.07],["2026*",7.85,true]]},
+        {label:"Precio",type:"line",title:"Precio al cierre del año, US$",fmt:fPX,
+         pts:[["2018",229.81],["2019",295.80],["2020",343.69],["2021",436.57],["2022",351.34],["2023",436.80],["2024",538.81],["2025",627.13],["jul 26",684.84]]}],
+      stats:[["Rentabilidad por dividendo","≈1,1%"],["Retorno anual 10 años","≈15%"],["Mejor / peor año","+31% / −18%"]],
+      facts:["*2026 usa el ritmo actual de US$ 1,96 por trimestre. El retorno de 2026 va hasta el 2 de julio.",
+             "El retorno total incluye dividendos reinvertidos. El dividendo es una parte pequeña: la mayor ganancia viene del alza del precio.",
+             "Tuvo un año negativo (2022, −18,2%) en este período. Pruébalo en el juego de Practicar.",
+             "Un ETF como este es una de las formas más simples de diversificar con una sola compra."]},
+    FERREYC1:{name:"Ferreycorp",sub:"Maquinaria Caterpillar, minería y construcción. Cotiza en la Bolsa de Valores de Lima.",yld:10,freq:0,
+      views:[],
+      stats:[["Rentabilidad por dividendo","≈10%"],["Pago a cuenta ene. 2026","S/ 0,106"],["Payout","≈57%"]],
+      facts:["Datos limitados: no se encontró una serie completa de precios ni de dividendos por año, así que no se grafica.",
+             "Paga dividendos a cuenta durante el año. En enero de 2026 pagó S/ 100 millones, equivalentes a S/ 0,1057 por acción. En 2020 su primer pago a cuenta fue de S/ 0,0766.",
+             "La rentabilidad cercana a 10% sale de un agregador que no indica la fecha exacta. Revisa el precio actual antes de usarla.",
+             "Una rentabilidad alta puede deberse a un precio que cayó. Compara con las utilidades y el payout."]}
+  };
+  var order = ["BAP","SCCO","KO","VOO","FERREYC1"];
+  var curCo = null, curView = {}, shortRange = false, calcAmt = 2000;
+
+  var yb = $("#ybars"), yl = $("#ylist");
+  order.forEach(function(k){
+    var c = CO[k], b = document.createElement("button");
+    b.type="button"; b.className="yb sel"; b.dataset.k=k; b.setAttribute("aria-pressed","false");
+    b.innerHTML = '<span>'+k+'</span><div class="track"><i style="transform:scaleX('+(c.yld/12)+')"></i></div><span class="v">'+NUM(c.yld,1)+'%</span>';
+    b.addEventListener("click",function(){renderCo(k); var t=$("#company"); if(t.scrollIntoView) t.scrollIntoView({behavior:REDUCE?"auto":"smooth",block:"start"})});
+    yb.appendChild(b);
+    var l = document.createElement("button");
+    l.type="button"; l.className="yl sel"; l.dataset.co=k; l.setAttribute("aria-pressed","false");
+    l.innerHTML = '<span>'+k+'</span><span class="v">≈'+NUM(c.yld,1)+'%</span>';
+    l.setAttribute("aria-label",k+", rentabilidad por dividendo cercana a "+NUM(c.yld,1)+"%");
+    yl.appendChild(l);
+  });
+  yl.addEventListener("click",function(e){
+    var b = e.target.closest("[data-co]"); if(!b) return;
+    showTab("empresas"); renderCo(b.dataset.co);
+  });
+
+  function renderCo(k){
+    var fresh = k!==curCo; curCo = k; var c = CO[k], host = $("#company");
+    $$(".yb").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.k===k))});
+    $$(".yl").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.co===k))});
+    var vs = c.views, vi = Math.min(curView[k]||0, Math.max(0,vs.length-1));
+    var h = '<div><h3 class="name">'+esc(c.name)+'<span class="tkr">'+k+'</span></h3><p class="intro" style="margin-top:10px">'+esc(c.sub)+'</p></div>';
+    h += '<div class="stats hero">'+c.stats.map(function(s){return '<div class="stat"><div class="k">'+esc(s[0])+'</div><div class="v">'+esc(s[1])+'</div></div>'}).join("")+'</div>';
+    h += '<div class="calc"><div class="field"><div class="row"><label for="dc">Si invirtieras</label><span class="mono" id="dc-o"></span></div><input type="range" id="dc" min="100" max="10000" step="100" value="'+calcAmt+'"></div>'+
+         '<div class="stats"><div class="stat"><div class="k">Dividendos al año</div><div class="v" id="dc-y"></div></div><div class="stat"><div class="k">Al mes, en promedio</div><div class="v" id="dc-m"></div></div><div class="stat"><div class="k" id="dc-pk"></div><div class="v" id="dc-p"></div></div></div>'+
+         '<p class="intro" style="font-size:.84rem">Con la rentabilidad de hoy (≈'+NUM(c.yld,1)+'%), antes de impuestos y costos. El dividendo puede cambiar.</p></div>';
+    if(vs.length){
+      var v = vs[vi];
+      h += '<div class="toolbar"><div class="seg" role="group" aria-label="Qué mostrar">'+vs.map(function(x,i){return '<button type="button" class="sel" data-v="'+i+'" aria-pressed="'+(i===vi)+'">'+esc(x.label)+'</button>'}).join("")+'</div>';
+      if(v.pts.length>=6) h += '<div class="seg" role="group" aria-label="Período"><button type="button" class="sel" data-rg="0" aria-pressed="'+(!shortRange)+'">Todo</button><button type="button" class="sel" data-rg="1" aria-pressed="'+shortRange+'">Últimos 4</button></div>';
+      h += '</div><div id="cbox"></div>';
+    }
+    h += '<ul class="facts">'+c.facts.map(function(f){return '<li>'+esc(f)+'</li>'}).join("")+'</ul>';
+    host.innerHTML = h;
+    if(fresh) replay(host,"reveal");
+
+    function calc(){
+      var a = +$("#dc").value; calcAmt = a;
+      var y = a*c.yld/100;
+      $("#dc-o").textContent = fmtS(a);
+      $("#dc-y").textContent = "≈ "+fmtS(y); $("#dc-m").textContent = "≈ "+fmtS(y/12);
+      if(c.freq){ $("#dc-pk").textContent = c.freq===1?"En su único pago":"Por cada pago ("+c.freq+" al año)"; $("#dc-p").textContent = "≈ "+fmtS(y/c.freq) }
+      else { $("#dc-pk").textContent = "Por pago"; $("#dc-p").textContent = "Varía" }
+    }
+    $("#dc").addEventListener("input",calc); calc();
+
+    if(vs.length){
+      var v2 = vs[vi], pts = (shortRange && v2.pts.length>=6) ? v2.pts.slice(-4) : v2.pts;
+      var svg = v2.type==="bar" ? barChart(pts,v2.fmt,v2.dec) : lineChart([{cls:"s1",pts:pts}],function(i){return v2.fmt(pts[i])},0);
+      $("#cbox").innerHTML = chartBox(v2.title+" · toca para ver el dato",svg);
+      wireChart($("#cbox"));
+      $$("[data-v]",host).forEach(function(b){b.addEventListener("click",function(){curView[k]=+b.dataset.v; renderCo(k)})});
+      $$("[data-rg]",host).forEach(function(b){b.addEventListener("click",function(){shortRange=b.dataset.rg==="1"; renderCo(k)})});
+    }
+  }
+  renderCo("BAP");
+
+  /* ---------- Practicar: prueba de nervios ---------- */
+  var RET = [[2019,31.4],[2020,18.3],[2021,28.8],[2022,-18.2],[2023,26.3],[2024,25.0],[2025,17.8]];
+  var G, gShown = 1000, gAdv = false;
+  function gameReset(){G={i:0,you:1000,hold:1000,stance:"in",hist:[]}; gShown=1000; gAdv=false; renderGame()}
+  function renderGame(){
+    var el = $("#game"), done = G.i>=RET.length;
+    var h = '<div class="ph" style="gap:10px"><span class="label">Juego · Prueba de nervios</span><h3 class="t2">Empiezas con S/ 1.000 en un ETF del <em>S&amp;P 500</em></h3><p class="intro">Cada año decides si te quedas invertido o te pasas a efectivo (que aquí rinde 0%). Los retornos son los reales de VOO entre 2019 y 2025.</p></div>';
+    h += '<div class="gamehead"><div><div class="label">Tu dinero</div><div class="big" id="g-val">'+fmtS(gShown)+'</div></div><div class="alt"><div class="label">Siempre invertido</div><div class="mono">'+fmtS(G.hold)+'</div></div></div>';
+    if(!done){
+      var yr = RET[G.i][0], prev = G.i? RET[G.i-1] : null;
+      h += '<p class="ctx">'+(prev ? 'El año pasado ('+prev[0]+') el mercado hizo <b class="'+(prev[1]<0?"neg":"pos")+'">'+SGN(prev[1],1)+'%</b>. ¿Qué haces en '+yr+'?' : 'Empieza '+yr+'. Aún no hay historial. ¿Qué haces?')+'</p>';
+      h += '<div class="seg two" role="group" aria-label="Tu decisión"><button type="button" class="sel" data-st="in" aria-pressed="'+(G.stance==="in")+'">Quedarme invertido</button><button type="button" class="sel" data-st="cash" aria-pressed="'+(G.stance==="cash")+'">Pasarme a efectivo</button></div>';
+      h += '<div><button type="button" class="btn" id="g-go">Ver qué pasó en '+yr+'</button></div>';
+    }
+    if(G.hist.length){
+      var yp = [["Inicio",1000]].concat(G.hist.map(function(x){return [String(x.y),x.you]}));
+      var hp = [["Inicio",1000]].concat(G.hist.map(function(x){return [String(x.y),x.hold]}));
+      var legend = '<div class="legend"><span><i class="s3"></i>Tu estrategia</span><span><i class="s2"></i>Siempre invertido</span></div>';
+      h += chartBox("Evolución de tus S/ 1.000 · toca para ver cada año",lineChart([{cls:"s2",pts:hp},{cls:"s3",pts:yp}],function(i){return (i?yp[i][0]:"Inicio")+" · tú "+fmtS(yp[i][1])+" · siempre invertido "+fmtS(hp[i][1])},0,!gAdv),legend);
+      h += '<div class="log"><div class="head"><span>Año</span><span>Decisión</span><span>Mercado</span><span>Tú</span></div>'+G.hist.map(function(x,ix){return '<div'+((gAdv&&ix===G.hist.length-1)?' class="reveal"':'')+'><span>'+x.y+'</span><span>'+(x.st==="in"?"Invertido":"Efectivo")+'</span><span class="'+(x.r<0?"neg":"pos")+'">'+SGN(x.r,1)+'%</span><span>'+fmtS(x.you)+'</span></div>'}).join("")+'</div>';
+    }
+    if(done){
+      var cash = G.hist.filter(function(x){return x.st==="cash"}).length, diff = G.hold-G.you, msg, cls;
+      var cash23 = G.hist.some(function(x){return x.y===2023&&x.st==="cash"}), cash22 = G.hist.some(function(x){return x.y===2022&&x.st==="cash"});
+      if(cash===0){cls="ok"; msg="Te quedaste invertido los 7 años y terminaste con "+fmtS(G.you)+". Viviste una caída de 18,2% en 2022 y la recuperaste con +26,3% en 2023."}
+      else if(diff>1){cls="warn"; msg="Pasarte a efectivo "+cash+(cash===1?" año":" años")+" te costó "+fmtS(diff)+" frente a quedarte invertido."+(cash23?" Saliste del mercado justo antes del rebote de 2023 (+26,3%).":"")+" Nadie sabe de antemano qué año será bueno."}
+      else {cls="ok"; msg="Tu estrategia terminó con "+fmtS(G.you)+", más que quedarte invertido ("+fmtS(G.hold)+")."+(cash22?" Evitaste la caída de 2022.":"")+" Acertar el momento exacto una vez es posible. Repetirlo año tras año es muy difícil."}
+      h += '<div class="verdict-box pop"><span class="label">Resultado</span><div class="verdict '+cls+'">'+fmtS(G.you)+' vs '+fmtS(G.hold)+'</div><p>'+msg+'</p><p class="intro" style="font-size:.85rem">Es una sola historia: VOO subió mucho en esos años y el pasado no garantiza el futuro.</p><div><button type="button" class="btn" id="g-re">Jugar otra vez</button></div></div>';
+    }
+    el.innerHTML = h;
+    var from = gShown; gShown = G.you;
+    if(gAdv) tween($("#g-val",el),from,G.you,fmtS);
+    else $("#g-val",el).textContent = fmtS(G.you);
+    $$("[data-st]",el).forEach(function(b){b.addEventListener("click",function(){
+      G.stance=b.dataset.st;
+      $$("[data-st]",el).forEach(function(x){x.setAttribute("aria-pressed",String(x===b))});
+    })});
+    var go = $("#g-go",el);
+    if(go) go.addEventListener("click",function(){
+      var r = RET[G.i][1], y = RET[G.i][0];
+      G.hold *= 1+r/100; if(G.stance==="in") G.you *= 1+r/100;
+      G.hist.push({y:y,r:r,st:G.stance,you:G.you,hold:G.hold}); G.i++;
+      gAdv = true; renderGame(); gAdv = false;
+    });
+    var re = $("#g-re",el); if(re) re.addEventListener("click",gameReset);
+    var cb = $(".chartbox",el); if(cb) wireChart(cb);
+  }
+  gameReset();
+
+  /* ---------- Practicar: máquina del tiempo ---------- */
+  var KOP=[["2023-03-16","mar 23",60.30],["2023-09-14","sep 23",60.88],["2024-03-14","mar 24",59.35],["2024-09-13","sep 24",69.18],["2025-03-14","mar 25",71.35],["2025-09-15","sep 25",69.92],["2026-03-13","mar 26",80.79],["2026-06-15","jun 26",80.82]];
+  var KOD=[["2023-03-16",.46],["2023-06-15",.46],["2023-09-14",.46],["2023-11-30",.46],["2024-03-14",.485],["2024-06-14",.485],["2024-09-13",.485],["2024-11-29",.485],["2025-03-14",.51],["2025-06-13",.51],["2025-09-15",.51],["2025-12-01",.51],["2026-03-13",.53],["2026-06-15",.53]];
+  var TM = {asset:"VOO",start:0,amt:1000}, tmShown = null;
+  function tmDivs(a,b){return KOD.reduce(function(s,d){return (d[0]>a&&d[0]<=b)?s+d[1]:s},0)}
+  function renderTM(refocus){
+    var el = $("#tm");
+    var starts = TM.asset==="VOO" ? RET.map(function(r){return "Inicio de "+r[0]}) : KOP.slice(0,-1).map(function(p){return "Compra en "+p[1]});
+    if(TM.start>=starts.length) TM.start = 0;
+    var h = '<div class="ph" style="gap:10px"><span class="label">Máquina del tiempo</span><h3 class="t2">¿Y si hubieras invertido <em>antes</em>?</h3><p class="intro">Elige un activo, un punto de partida y un monto. Ves cuánto valdría hoy con los datos reales.</p></div>';
+    h += '<div class="cols2"><div class="field"><label for="tm-a">Activo</label><select id="tm-a"><option value="VOO"'+(TM.asset==="VOO"?" selected":"")+'>VOO (ETF del S&amp;P 500)</option><option value="KO"'+(TM.asset==="KO"?" selected":"")+'>Coca-Cola (KO)</option></select></div>'+
+         '<div class="field"><label for="tm-s">Desde</label><select id="tm-s">'+starts.map(function(s,i){return '<option value="'+i+'"'+(i===TM.start?" selected":"")+'>'+s+'</option>'}).join("")+'</select></div></div>';
+    h += '<div class="field"><div class="row"><label for="tm-m">Monto invertido de una vez</label><span class="mono" id="tm-mo">'+fmtS(TM.amt)+'</span></div><input type="range" id="tm-m" min="100" max="10000" step="100" value="'+TM.amt+'"></div>';
+    var pts, base, total, extra, label;
+    if(TM.asset==="VOO"){
+      var v = TM.amt; pts=[["Inicio",v]];
+      for(var i=TM.start;i<RET.length;i++){v*=1+RET[i][1]/100; pts.push([String(RET[i][0]),v])}
+      v*=1.095; pts.push(["jul 26",v]);
+      total = v; extra = null; label="Valor con dividendos reinvertidos";
+    } else {
+      var p0 = KOP[TM.start], shares = TM.amt/p0[2]; pts=[["Inicio",TM.amt]]; var last=0;
+      for(var j=TM.start+1;j<KOP.length;j++){var pj=KOP[j]; last=shares*(pj[2]+tmDivs(p0[0],pj[0])); pts.push([pj[1],last])}
+      total = last; extra = shares*tmDivs(p0[0],KOP[KOP.length-1][0]); label="Valor con dividendos cobrados (sin reinvertir)";
+    }
+    var gain = total-TM.amt, pct = gain/TM.amt*100;
+    base = pts.map(function(p){return [p[0],TM.amt]});
+    h += '<div class="sim-out"><div class="stat"><div class="k">Pusiste</div><div class="v">'+fmtS(TM.amt)+'</div></div><div class="stat"><div class="k">Hoy valdría</div><div class="v" id="tm-total">'+fmtS(total)+'</div></div><div class="stat"><div class="k">Ganancia</div><div class="v '+(gain<0?"neg":"pos")+'">'+SGN(pct,0)+'%</div></div>'+(extra!==null?'<div class="stat"><div class="k">Dividendos cobrados</div><div class="v">'+fmtS(extra)+'</div></div>':'')+'</div>';
+    var legend = '<div class="legend"><span><i></i>'+label+'</span><span><i class="s2"></i>Dejarlo en efectivo (0%)</span></div>';
+    h += chartBox("Evolución · toca para ver cada punto",lineChart([{cls:"s2",pts:base},{cls:"s1",pts:pts}],function(i){return pts[i][0]+" · "+fmtS(pts[i][1])},0,true),legend);
+    h += '<p class="note"><span class="label">Ojo</span>Cálculo con datos históricos en la moneda original, sin tipo de cambio, impuestos ni comisiones. El pasado no garantiza el futuro. '+(TM.asset==="KO"?'Solo hay precios disponibles desde marzo de 2023.':'')+'</p>';
+    el.innerHTML = h;
+    var prev = tmShown; tmShown = total;
+    tween($("#tm-total",el),prev,total,fmtS);
+    $("#tm-a").addEventListener("change",function(e){TM.asset=e.target.value; TM.start=0; tmShown=null; renderTM()});
+    $("#tm-s").addEventListener("change",function(e){TM.start=+e.target.value; renderTM()});
+    $("#tm-m").addEventListener("input",function(e){TM.amt=+e.target.value; renderTM(true)});
+    wireChart($(".chartbox",el));
+    if(refocus){var m=$("#tm-m"); if(m&&m.focus) m.focus()}
+  }
+  renderTM();
+
+  /* ---------- Simulador ---------- */
+  function sim(){
+    var m = +$("#s-m").value, y = +$("#s-y").value, r = +$("#s-r").value/100;
+    var rm = r===0?0:Math.pow(1+r,1/12)-1;
+    function fvAt(months){return rm===0 ? m*months : m*(Math.pow(1+rm,months)-1)/rm}
+    var n = y*12, inv = m*n, fv = fvAt(n), gain = fv-inv;
+    $("#o-m").textContent = fmtS(m)+" al mes";
+    $("#o-y").textContent = y+(y===1?" año":" años");
+    $("#o-r").textContent = NUM(r*100,1)+"%";
+    $("#r-in").textContent = fmtS(inv); $("#r-gain").textContent = fmtS(gain); $("#r-fv").textContent = fmtS(fv);
+    var p = inv/fv;
+    $("#b-in").style.transform = "scaleX("+p+")";
+    $("#b-gain").style.transform = "scaleX("+(1-p)+")";
+    $$("#presets .chip").forEach(function(c){c.setAttribute("aria-pressed",String(+c.dataset.r===+$("#s-r").value))});
+    var pts=[["0",0]], inp=[["0",0]], step = Math.max(1,Math.ceil(y/8));
+    for(var a=step;a<y;a+=step){pts.push([String(a),fvAt(a*12)]); inp.push([String(a),m*a*12])}
+    pts.push([String(y),fv]); inp.push([String(y),inv]);
+    var legend = '<div class="legend"><span><i></i>Valor estimado</span><span><i class="s2"></i>Lo que aportaste</span></div>';
+    $("#sim-chart").innerHTML = chartBox("Crecimiento por año · toca para ver",lineChart([{cls:"s2",pts:inp},{cls:"s1",pts:pts}],function(i){return "Año "+pts[i][0]+" · aportado "+fmtS(inp[i][1])+" · valor "+fmtS(pts[i][1])},0,true),legend);
+    wireChart($("#sim-chart .chartbox"));
+  }
+  ["s-m","s-y","s-r"].forEach(function(id){$("#"+id).addEventListener("input",sim)});
+  $("#presets").addEventListener("click",function(e){var b=e.target.closest("[data-r]"); if(!b) return; $("#s-r").value=b.dataset.r; sim()});
+  sim();
+})();
+</script>
+
+<script>
+if("serviceWorker" in navigator && (location.protocol==="https:"||location.hostname==="localhost"||location.hostname==="127.0.0.1")){
+  window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});
+}
+</script>
+</body>
+</html>
